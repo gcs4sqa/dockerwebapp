@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+    docker.withRegistry('https://registry.hub.docker.com', 'goldbuild-dockerhub') {
 
         def customImage = docker.build("goldbuild/dockerwebapp")
 
